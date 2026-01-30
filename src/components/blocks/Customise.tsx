@@ -1,27 +1,27 @@
 import React from 'react';
 import { Button } from '../ui/Button';
 
-export const YourData: React.FC = () => {
+export const Customise: React.FC = () => {
   return (
     <section className="bg-white py-16 md:py-32 px-4 md:px-8 lg:px-32">
       <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
+        {/* Image */}
+        <div className="bg-[#C4DEFD] w-full aspect-[4/3] rounded-lg"></div>
+
+        {/* Text */}
         <div className="flex flex-col gap-6">
           <h2 className="text-secondary text-4xl md:text-5xl lg:text-[64px] font-bold leading-tight">
-            100% your data
+            Customise it to your needs
           </h2>
           <p className="text-gray-800 text-lg leading-relaxed">
-            The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+            Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
           </p>
           <div className="pt-4">
             <Button variant="primary" size="lg" rightIcon={<span>&rarr;</span>}>
-              Read more
+              Let's Go
             </Button>
           </div>
-        </div>
-
-        <div className="bg-white border border-gray-100 shadow-xl w-full aspect-[4/3] rounded-lg flex items-center justify-center">
-             <img src="./assets/images/feature-1.png" alt="Encryption" className="max-w-full h-auto" />
         </div>
 
       </div>
