@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
-/* Design tokens will be extracted from Figma */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @theme {
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-primary: #4F9CF9;
+  --color-secondary: #043873;
+  --color-secondary-dark: #032b57;
+  --color-accent: #FFE492;
+  --color-text-dark: #212529;
+  --color-text-light: #FFFFFF;
+  --font-sans: "Inter", sans-serif;
 }
 
-body {
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text-dark);
+    -webkit-font-smoothing: antialiased;
+  }
 }
